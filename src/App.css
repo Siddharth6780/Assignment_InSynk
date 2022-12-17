@@ -1,38 +1,141 @@
-.App {
+body {
+  padding-left: 5.063rem;
+  padding-right: 5.063rem;
+  padding-top: 0.688rem;
+}
+.imgCointainer {
+  border-radius: 0.625rem;
+}
+
+.movie-list {
+  width: 208px;
+  height: 332px;
+  margin: 16px;
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.MovieContainer {
+  align-items: center;
+}
+
+.movie-img {
+  width: 208px;
+  height: 302px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.imgTitle {
+  font-size: 14px;
+  text-align: center;
+  padding: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 2px 2px 5px 2px #e1e3e6;
+}
+
+.NavbarContainer {
+  box-shadow: 0 3px 0 #c0c4cc;
+}
+
+.tag {
+  align-items: center;
+  height: 34px;
+  width: 34px;
+  border-radius: 0px;
+  background: linear-gradient(0deg, #ffffff, #ffffff),
+    linear-gradient(0deg, #000000, #000000);
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 10px;
+  float: left;
+  border: 1px solid #000000;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1000;
+  background-color: #fff;
+  padding: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.01em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fontAwesome {
+  font-family: Arial, FontAwesome;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.movie-card {
+  background-color: #fff;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 790px;
+  margin-top: 20px;
+  padding: 15px;
+  color: #555;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.movie-card .movie-left {
+  margin-left: 35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.movie-card .movie-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.movie-card .movie-rating span {
+  color: orange;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .container .inner-form .basic-search .input-field input {
+    padding: 10px 80px 10px 15px;
   }
-  to {
-    transform: rotate(360deg);
+  .container .inner-form .basic-search .input-field .icon-wrap {
+    width: 80px;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
+  .container .inner-form .basic-search .input-field .icon-wrap svg {
+    width: 30px;
+    height: 30px;
+  }
+  .movie-card {
+    flex-direction: column;
+  }
+  .movie-card .movie-left {
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+  .movie-card .movie-right {
+    text-align: center;
+  }
+}
+
+.movie-right {
+  height: 389px;
+  width: 266px;
+  left: 458px;
+  top: 389px;
+  border-radius: 0px;
+}
+
+.modal-img {
+  height: 389px;
+  width: 266px;
+  border-radius: 0px;
+}
+
+.modal-desc {
+  margin-top: 16px;
+}
+
+.movie-rating {
+  margin-top: 16px;
 }
